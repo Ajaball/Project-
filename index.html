@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تقنية فلاتر - مشروع متكامل</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        /* تنسيق شريط التنقل العلوي */
+        nav {
+            background-color: #02569B;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #02569B;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .center-content {
+            text-align: center;
+        }
+        img {
+            max-width: 250px;
+            border-radius: 10px;
+            border: 2px solid #02569B;
+            margin: 15px 0;
+        }
+        ul {
+            text-align: right;
+            display: inline-block;
+            direction: rtl;
+            background: #e1f5fe;
+            padding: 20px 40px;
+            border-radius: 8px;
+        }
+        .bio-section {
+            background: #e1f5fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-right: 4px solid #02569B;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        button {
+            background-color: #02569B;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0175C2;
+        }
+        /* فاصل بين القسمين */
+        hr {
+            border: 0;
+            height: 2px;
+            background: #ccc;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="home" class="center-content">
+            <h1>إطار عمل فلاتر (Flutter)</h1>
+            <p>فلاتر هي تقنية مبتكرة ومفتوحة المصدر من جوجل، تتيح لك برمجة تطبيقات الهواتف الذكية وتطبيقات الويب من خلال كود برمجي واحد فقط.</p>
+
+            <img src="https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png" alt="شعار فلاتر">
+
+            <h2>أهم مميزات فلاتر:</h2>
+            <ul>
+                <li>توفير الوقت والجهد بكتابة كود واحد لجميع المنصات.</li>
+                <li>أداء سريع جداً ومقارب للتطبيقات الأصلية.</li>
+                <li>ميزة إعادة التحميل السريع (Hot Reload).</li>
+            </ul>
+
+            <h2>مقدمة سريعة عن التقنية:</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fq4N0hgOWzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <br><br>
+            <a href="https://flutter.dev" target="_blank" style="color: #0175C2; font-weight: bold; text-decoration: none;">🔗 زيارة الموقع الرسمي للتقنية</a>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>تواصل معنا</h2>
+
+            <div class="bio-section">
+                <h3>نبذة عني:</h3>
+                <p>أنا أحمد هشام الزريقي، طالب تقنية معلومات، مهتم بعالم البرمجة وشغوف جداً بتطوير تطبيقات الهواتف الذكية.</p>
+                <p>📧 <strong>البريد الإلكتروني:</strong> ahmad.alzurayqi@email.com</p>
+            </div>
+
+            <h3 class="center-content">اترك رسالتك:</h3>
+            <form action="#" method="get">
+                <label for="name">الاسم (Name):</label>
+                <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا..." required>
+
+                <label for="email">البريد الإلكتروني (Email):</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="comments">التعليقات (Comments):</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="اكتب تعليقك هنا..." required></textarea>
+
+                <button type="submit">إرسال (Submit)</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
