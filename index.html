@@ -2,108 +2,130 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تقنية فلاتر - مشروع متكامل</title>
+    <title>موقع العالم الخوارزمي</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f9f9;
+            font-family: 'Cairo', sans-serif; /* تم تغيير الخط هنا */
+            background-color: #f5f0e6;
             color: #333;
             margin: 0;
             padding: 0;
         }
-        /* تنسيق شريط التنقل العلوي */
         nav {
-            background-color: #02569B;
+            background-color: #5c4033;
             padding: 15px;
             text-align: center;
             position: sticky;
             top: 0;
+            z-index: 100;
         }
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 18px;
             font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #f39c12;
         }
         .container {
             max-width: 800px;
             margin: 30px auto;
-            background: white;
+            background: #fff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         h1, h2 {
-            color: #02569B;
+            color: #5c4033;
             text-align: center;
         }
         p {
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.8;
+            text-align: justify;
         }
         .center-content {
             text-align: center;
         }
         img {
             max-width: 250px;
-            border-radius: 10px;
-            border: 2px solid #02569B;
-            margin: 15px 0;
+            border-radius: 50%;
+            border: 4px solid #5c4033;
+            margin: 20px 0;
         }
         ul {
             text-align: right;
             display: inline-block;
             direction: rtl;
-            background: #e1f5fe;
+            background: #fdf6e3;
             padding: 20px 40px;
             border-radius: 8px;
+            border-right: 5px solid #d35400;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 17px;
         }
         .bio-section {
-            background: #e1f5fe;
-            padding: 15px;
+            background: #fdf6e3;
+            padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
-            border-right: 4px solid #02569B;
+            border-right: 5px solid #5c4033;
         }
         form {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 15px;
             max-width: 500px;
             margin: auto;
         }
         label {
             font-weight: bold;
+            color: #5c4033;
         }
         input, textarea {
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 6px;
             font-family: inherit;
         }
         button {
-            background-color: #02569B;
+            background-color: #d35400;
             color: white;
             border: none;
             padding: 12px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 16px;
             font-weight: bold;
+            font-family: inherit;
         }
         button:hover {
-            background-color: #0175C2;
+            background-color: #a04000;
         }
-        /* فاصل بين القسمين */
         hr {
             border: 0;
             height: 2px;
-            background: #ccc;
+            background: #e0e0e0;
             margin: 50px 0;
+        }
+        .wiki-link {
+            display: inline-block;
+            background-color: #5c4033;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .wiki-link:hover {
+            background-color: #3e2723;
         }
     </style>
 </head>
@@ -117,23 +139,23 @@
     <div class="container">
         
         <section id="home" class="center-content">
-            <h1>إطار عمل فلاتر (Flutter)</h1>
-            <p>فلاتر هي تقنية مبتكرة ومفتوحة المصدر من جوجل، تتيح لك برمجة تطبيقات الهواتف الذكية وتطبيقات الويب من خلال كود برمجي واحد فقط.</p>
+            <h1>العالم أبو عبد الله الخوارزمي</h1>
+            <p>محمد بن موسى الخوارزمي، عالم رياضيات وفلك وجغرافيا مسلم. يُعتبر من أوائل علماء الرياضيات المسلمين، وأعماله لعبت دوراً كبيراً في تقدم الرياضيات في عصره. هو مؤسس علم الجبر، ومبتكر مفهوم "الخوارزميات" التي يُبنى عليها علم الحاسوب والبرمجة في عصرنا الحديث.</p>
 
-            <img src="https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png" alt="شعار فلاتر">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Khwarizmi_am.jpg/220px-Khwarizmi_am.jpg" alt="صورة تخيلية للخوارزمي">
 
-            <h2>أهم مميزات فلاتر:</h2>
+            <h2>أبرز إنجازاته العلمية:</h2>
             <ul>
-                <li>توفير الوقت والجهد بكتابة كود واحد لجميع المنصات.</li>
-                <li>أداء سريع جداً ومقارب للتطبيقات الأصلية.</li>
-                <li>ميزة إعادة التحميل السريع (Hot Reload).</li>
+                <li>تأسيس علم الجبر وفصله عن علم الحساب.</li>
+                <li>ابتكار "الخوارزميات" (Algorithms) وهي أساس لغات البرمجة.</li>
+                <li>إدخال الأرقام الهندية ومفهوم "الصفر" إلى العالم الغربي.</li>
             </ul>
 
-            <h2>مقدمة سريعة عن التقنية:</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fq4N0hgOWzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>فيديو وثائقي قصير:</h2>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/CMU_99uQ76k" title="الفيلم الوثائقي العالم المسلم الخوارزمي" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
-            <br><br>
-            <a href="https://flutter.dev" target="_blank" style="color: #0175C2; font-weight: bold; text-decoration: none;">🔗 زيارة الموقع الرسمي للتقنية</a>
+            <br>
+            <a href="https://ar.wikipedia.org/wiki/محمد_بن_موسى_الخوارزمي" target="_blank" class="wiki-link">📖 اقرأ المزيد عنه في ويكيبيديا</a>
         </section>
 
         <hr>
@@ -143,20 +165,20 @@
 
             <div class="bio-section">
                 <h3>نبذة عني:</h3>
-                <p>أنا أحمد هشام الزريقي، طالب تقنية معلومات، مهتم بعالم البرمجة وشغوف جداً بتطوير تطبيقات الهواتف الذكية.</p>
-                <p>📧 <strong>البريد الإلكتروني:</strong> ahmad.alzurayqi@email.com</p>
+                <p>أنا <strong>فايز العطوي</strong>، طالب برمجة وعلوم حاسب. مهتم بعالم التقنية، وتطوير البرمجيات، ودراسة الخوارزميات التي تعتبر أساس التطور التكنولوجي الحديث.</p>
+                <p>📧 <strong>البريد الإلكتروني:</strong> fayez.alatwi@email.com</p>
             </div>
 
-            <h3 class="center-content">اترك رسالتك:</h3>
+            <h3 class="center-content">نموذج المراسلة (Contact Form):</h3>
             <form action="#" method="get">
                 <label for="name">الاسم (Name):</label>
-                <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا..." required>
+                <input type="text" id="name" name="name" placeholder="اكتب اسمك الثلاثي..." required>
 
                 <label for="email">البريد الإلكتروني (Email):</label>
                 <input type="email" id="email" name="email" placeholder="example@mail.com" required>
 
                 <label for="comments">التعليقات (Comments):</label>
-                <textarea id="comments" name="comments" rows="4" placeholder="اكتب تعليقك هنا..." required></textarea>
+                <textarea id="comments" name="comments" rows="5" placeholder="اكتب رسالتك أو تعليقك هنا..." required></textarea>
 
                 <button type="submit">إرسال (Submit)</button>
             </form>
